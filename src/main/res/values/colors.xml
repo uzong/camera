@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Theme Colors -->
+    <color name="colorPrimary">#FF69B4</color>
+    <color name="colorPrimaryDark">#FF1493</color>
+    <color name="colorAccent">#FF69B4</color>
+    
+    <!-- Text Colors -->
+    <color name="textPrimary">#333333</color>
+    <color name="textSecondary">#666666</color>
+    <color name="textHint">#999999</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="backgroundLight">#FFF0F5</color>
+    
+    <!-- Divider Colors -->
+    <color name="divider">#EEEEEE</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+
+    <!-- Launcher Icon Colors -->
+    <color name="ic_launcher_background">#FF69B4</color>
+
+    <!-- 新增颜色 -->
+    <color name="colorControlNormal">#757575</color>
+</resources> 

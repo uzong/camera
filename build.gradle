@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.uzong.camera'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.uzong.camera"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+        
+        // 应用名称
+        resValue "string", "app_name", "极简相机"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 添加内存配置
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = true
+        jumboMode = true
+    }
+
+    // 启用 R8 完全模式
+    buildFeatures {
+        buildConfig true
+    }
+
+    // 配置 aaptOptions
+    aaptOptions {
+        cruncherEnabled = false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // 图片处理库
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    
+    // 相机库
+    def camerax_version = "1.2.3"
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-view:${camerax_version}"
+    
+    // 图片滤镜处理库
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    // Fragment 相关
+    implementation "androidx.fragment:fragment:1.6.2"
+    
+    // 生命周期组件
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.6.2"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.6.2"
+    
+    // 图片编辑
+    implementation 'com.burhanrashid52:photoeditor:3.0.1'
+} 

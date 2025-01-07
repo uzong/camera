@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 白色背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <stroke android:width="4dp" android:color="#FFE4E1"/>
+            <padding android:left="12dp" android:top="12dp" android:right="12dp" android:bottom="12dp"/>
+        </shape>
+    </item>
+    
+    <!-- 内层装饰 -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="#FFB6C1"
+                android:dashWidth="4dp" android:dashGap="4dp"/>
+        </shape>
+    </item>
+    
+    <!-- 四角花纹 -->
+    <item android:gravity="top|left">
+        <shape android:shape="rectangle">
+            <size android:width="20dp" android:height="20dp"/>
+            <stroke android:width="2dp" android:color="#FFB6C1"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|right">
+        <shape android:shape="rectangle">
+            <size android:width="20dp" android:height="20dp"/>
+            <stroke android:width="2dp" android:color="#FFB6C1"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|left">
+        <shape android:shape="rectangle">
+            <size android:width="20dp" android:height="20dp"/>
+            <stroke android:width="2dp" android:color="#FFB6C1"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|right">
+        <shape android:shape="rectangle">
+            <size android:width="20dp" android:height="20dp"/>
+            <stroke android:width="2dp" android:color="#FFB6C1"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</layer-list> 

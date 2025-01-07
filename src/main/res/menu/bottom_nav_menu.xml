@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_beauty"
+        android:icon="@drawable/ic_beauty"
+        android:title="美颜"/>
+    <item
+        android:id="@+id/nav_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="滤镜"/>
+    <item
+        android:id="@+id/nav_frame"
+        android:icon="@drawable/ic_frame"
+        android:title="相框"/>
+</menu> 

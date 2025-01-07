@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 基础木色背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#8B4513" /> <!-- 深棕色 -->
+        </shape>
+    </item>
+
+    <!-- 木纹纹理 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:centerColor="#00000000"
+                android:endColor="#33000000"
+                android:startColor="#33000000"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- 垂直木纹 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:centerColor="#00000000"
+                android:endColor="#22000000"
+                android:startColor="#22000000"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- 木质纹理细节 -->
+    <item>
+        <bitmap
+            android:src="@drawable/wood_grain"
+            android:tileMode="repeat"
+            android:alpha="0.1" />
+    </item>
+</layer-list> 
